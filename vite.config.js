@@ -7,5 +7,12 @@ export default defineConfig({
   plugins: [
     react(),
     tailwindcss() 
-  ]
+  ],
+  base: '/ProteinVisual/',
+  build:{
+    outDir: 'dist',
+    assetsDir: 'assets'
+  
+  }
 })
+

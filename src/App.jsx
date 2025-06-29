@@ -1,5 +1,4 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom'; 
 import Navbar from './components/Navbar';
 import HomePage from './pages/Homepage';
 import VisualizationPage from './pages/VisualizationPage';
@@ -9,8 +8,7 @@ import './index.css';
 
 function App() {
   return (
-    <Router
-    >
+    <HashRouter> 
       <div className="App">
         <Navbar />
         <Routes>
@@ -20,10 +18,8 @@ function App() {
           <Route path="/about" element={<About />} />
         </Routes>
       </div>
-    </Router>
+    </HashRouter>
   );
 }
-
-
 
 export default App;
